@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Tiffany Jia</title>
+    <!-- 引入 DotGothic16 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        /* 设置页面的基本样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* 防止出现滚动条 */
+            font-family: 'DotGothic16', sans-serif; /* 设置全局字体为 DotGothic16 */
+        }
+
+        /* 全屏视频样式 */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;  /* 确保视频宽度覆盖全屏 */
+            min-height: 100%; /* 确保视频高度覆盖全屏 */
+            z-index: -1; /* 视频放在所有内容的后面 */
+            object-fit: cover; /* 保持视频比例，不变形 */
+        }
+
+        /* 页面内容样式 */
+        .content {
+            position: relative;
+            z-index: 1; /* 确保内容显示在视频之上 */
+            color: white;
+            text-align: center;
+            padding-top: 15%;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 48px; /* 设置标题字体大小 */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 段落样式 */
+        p {
+            font-size: 24px; /* 设置段落字体大小 */
+            margin-top: 20px;
+        }
+
+        /* 使标题和段落位于屏幕的底部 */
+        .content-bottom {
+            position: absolute;
+            bottom: 20px; /* 距离底部 20px */
+            width: 100%;
+            text-align: center; /* 内容居中 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 背景视频 -->
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="YYZT.mp4" type="video/mp4">
+        <source src="your-video.webm" type="video/webm">
+        您的浏览器不支持 HTML5 视频标签。
+    </video>
+
+    <!-- 页面内容 -->
+    <div class="content">
+        <h1>- To Tiffany Jia -</h1>
+        <p>"雷神の 少し響みて さし曇り 雨もふらぬか 君を留めむ"</p>
+        <p>"雷神の 少し響みて ふらずとも 吾は留らむ 妹し留めば"</p>
+    </div>
+
+    <!-- 位于底部的内容 -->
+    <div class="content-bottom">
+        <h1>2024-09-21</h1>
+        <p>遥叩芳辰，生辰吉乐。</p>
+    </div>
+
+</body>
+</html>
